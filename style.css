@@ -1,0 +1,245 @@
+*{ 
+    padding: 0; 
+    margin: 0; 
+    border: 0; 
+    text-decoration: none; 
+} 
+    
+:focus,:active{outline: none;} 
+a:focus,a:active{outline: none;} 
+
+nav,footer,header,aside{display: block;} 
+
+:root{ 
+--boss: rgb(160, 160, 160); 
+--colors: rgb(210, 198, 198); 
+}  
+
+input,button,textarea{font-family:inherit;} 
+
+input::-ms-clear{display: none;} 
+button{cursor: pointer;} 
+button::-moz-focus-inner {padding:0;border:0;} 
+a, a:visited{text-decoration: none;} 
+a:hover{text-decoration: none;} 
+ul li{list-style: none;}
+ol li{list-style: none;}  
+img{vertical-align: top;} 
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} 
+
+html{ 
+scroll-behavior: smooth; 
+}
+body {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 110vh;
+    background-color: #234b75;
+    transition: 2s;
+}
+.header {
+    /* border: 1px solid #000; */
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    transform: translateY(30px);
+
+}
+.header__logo {
+    width: 40px;
+}
+.header__menu {
+    width: 40px;
+}
+.main {
+}
+.slider {
+    /* border: 1px solid #000; */
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    /* padding: 200px 15px; */
+    display: flex;
+    transition: 1s;
+}
+.slide {
+    width: 100%;
+    /* background-color: #146234; */
+    flex: 0 0 100%;
+}
+/* .slide:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    background: red;
+    transition: 5s;
+}
+.slide:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    background: blue;
+    transition: 5s;
+} */
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    transform: translateY(-100px);
+    margin-bottom: 50px;
+}
+.btn {
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 900;
+    color: #e6e6e6;
+    width: 50px;
+}
+.btn:nth-child(3) {
+    width: 100px;
+}
+.btn:nth-child(2) {
+    width: 60px;
+}
+.btn:nth-child(4) {
+    width: 75px;
+}
+.slide__body {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    /* border: 1px solid #000; */
+}
+.block {
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    right: 80px;
+    top: 350px;
+}
+.block2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    right: 80px;
+    top: 450px;
+}
+.block3 {
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    right: 80px;
+    top: 350px;
+}
+.block4 {
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    right: 80px;
+    top: 350px;
+}
+.img1 {
+    width:800px;
+    position: absolute;
+    left: -100px;
+    top: 50px;
+}
+.img2 {
+    width: 500px;
+    position: absolute;
+    right: 50px;
+    /* top: 100px; */
+}
+.img3 {
+    width:500px;
+    position: absolute;
+    left: 0px;
+}
+.img4 {
+    width: 500px;
+    position: absolute;
+    right: 50px;
+}
+.img5 {
+    width:500px;
+    position: absolute;
+    left: 50px;
+    top: -120px;
+}
+.img6 {
+    width: 500px;
+    position: absolute;
+    right: 0px;
+}
+.img7 {
+    width: 380px;
+    position: absolute;
+    left: 150px;
+    top: 80px;
+}
+.img8 {
+    width: 500px;
+    position: absolute;
+    right: 0px;
+    top: -250px;
+}
+.text1 {
+    width: 500px;
+    position: absolute;
+    right: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    top: -50px;
+    color: white;
+    text-shadow: 0 0 20px black;
+    font-family: 'Montserrat Alternates';
+}
+.text2 {
+    width: 500px;
+    position: absolute;
+    right: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    /* top: -100px; */
+    color: black;
+    text-shadow: 0 0 8px white;
+    font-family: 'Bebas Neue';
+}
+.text3 {
+    width: 500px;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    top: -90px;
+    color: black;
+    text-shadow: 0 0 8px white;
+    font-family: 'Chewy';
+}
+.text4 {
+    width: 500px;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    top: -90px;
+    color: black;
+    text-shadow: 0 0 3px green;
+    font-family: 'Press Start 2P';
+}
+.footer {
+}
