@@ -56,6 +56,9 @@ body {
     cursor: pointer;
     position: relative;
 }
+.header__menu:hover {
+    transform: scale(1.2);
+}
 .menu {
     display: flex;
     flex-direction: column;
@@ -208,45 +211,53 @@ body {
     position: absolute;
     left: -100px;
     top: 50px;
+    animation: scale 5s infinite;
 }
 .img2 {
     width: 500px;
     position: absolute;
     right: 50px;
     /* top: 100px; */
+    animation: scale 5s infinite;
 }
 .img3 {
     width:500px;
     position: absolute;
     left: 0px;
+    animation: scale 5s infinite;
 }
 .img4 {
     width: 500px;
     position: absolute;
     right: 50px;
+    animation: scale 5s infinite;
 }
 .img5 {
     width:500px;
     position: absolute;
     left: 50px;
     top: -120px;
+    animation: scale 5s infinite;
 }
 .img6 {
     width: 500px;
     position: absolute;
     right: 0px;
+    animation: scale 5s infinite;
 }
 .img7 {
     width: 380px;
     position: absolute;
     left: 150px;
     top: 80px;
+    animation: scale 5s infinite;
 }
 .img8 {
     width: 500px;
     position: absolute;
     right: 0px;
     top: -250px;
+    animation: scale 5s infinite;
 }
 .text1 {
     width: 500px;
@@ -259,6 +270,7 @@ body {
     color: white;
     text-shadow: 0 0 20px black;
     font-family: 'Montserrat Alternates';
+    animation: scale 5s infinite;
 }
 .text2 {
     width: 500px;
@@ -271,6 +283,7 @@ body {
     color: black;
     text-shadow: 0 0 8px white;
     font-family: 'Bebas Neue';
+    animation: scale 5s infinite;
 }
 .text3 {
     width: 500px;
@@ -283,6 +296,7 @@ body {
     color: black;
     text-shadow: 0 0 8px white;
     font-family: 'Chewy';
+    animation: scale 5s infinite;
 }
 .text4 {
     width: 500px;
@@ -295,6 +309,18 @@ body {
     color: black;
     text-shadow: 0 0 3px green;
     font-family: 'Press Start 2P';
+    animation: scale 5s infinite;
+}
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 .footer {
 }
