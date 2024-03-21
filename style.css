@@ -46,7 +46,6 @@ body {
     margin: 0 auto;
     justify-content: space-between;
     transform: translateY(30px);
-
 }
 .header__logo {
     width: 40px;
@@ -109,7 +108,6 @@ body {
     text-shadow: 0 0 10px black;
 }
 .main {
-    background-color: #234b75;
 }
 .slider {
     /* border: 1px solid #000; */
