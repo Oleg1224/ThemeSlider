@@ -39,6 +39,24 @@ body {
     background-color: #234b75;
     transition: 2s;
 }
+.left {
+    width: 300px;
+    /* border: 1px solid #cacaca; */
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.right {
+    width: 300px;
+    /* border: 1px solid #cacaca; */
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
 .header {
     /* border: 1px solid #000; */
     display: flex;
@@ -46,6 +64,8 @@ body {
     margin: 0 auto;
     justify-content: space-between;
     transform: translateY(30px);
+    position: relative;
+    z-index: 25;
 }
 .header__logo {
     width: 40px;
@@ -71,6 +91,7 @@ body {
     /* display: none; */
     transform: scale(0);
     transition: 0.7s;
+    z-index: 21;
 }
 .menu.new {
     transform: scale(1);
@@ -209,53 +230,53 @@ body {
     position: absolute;
     left: -100px;
     top: 50px;
-    animation: scale 5s infinite;
+    /* animation: scale 5s infinite; */
 }
 .img2 {
     width: 500px;
     position: absolute;
     right: 50px;
     /* top: 100px; */
-    animation: scale 5s infinite;
+    /* animation: scale 5s infinite; */
 }
 .img3 {
     width:500px;
     position: absolute;
     left: 0px;
-    animation: scale 5s infinite;
+    /* animation: scale 5s infinite; */
 }
 .img4 {
     width: 500px;
     position: absolute;
     right: 50px;
-    animation: scale 5s infinite;
+    /* animation: scale 5s infinite; */
 }
 .img5 {
     width:500px;
     position: absolute;
     left: 50px;
     top: -120px;
-    animation: scale 5s infinite;
+    /* animation: scale 5s infinite; */
 }
 .img6 {
     width: 500px;
     position: absolute;
     right: 0px;
-    animation: scale 5s infinite;
+    /* animation: scale 5s infinite; */
 }
 .img7 {
     width: 380px;
     position: absolute;
     left: 150px;
     top: 80px;
-    animation: scale 5s infinite;
+    /* animation: scale 5s infinite; */
 }
 .img8 {
     width: 500px;
     position: absolute;
     right: 0px;
     top: -250px;
-    animation: scale 5s infinite;
+    /* animation: scale 5s infinite; */
 }
 .text1 {
     width: 500px;
@@ -268,7 +289,7 @@ body {
     color: white;
     text-shadow: 0 0 20px black;
     font-family: 'Montserrat Alternates';
-    animation: scale 5s infinite;
+    /* animation: scale 5s infinite; */
 }
 .text2 {
     width: 500px;
@@ -281,7 +302,7 @@ body {
     color: black;
     text-shadow: 0 0 8px white;
     font-family: 'Bebas Neue';
-    animation: scale 5s infinite;
+    /* animation: scale 5s infinite; */
 }
 .text3 {
     width: 500px;
@@ -294,7 +315,7 @@ body {
     color: black;
     text-shadow: 0 0 8px white;
     font-family: 'Chewy';
-    animation: scale 5s infinite;
+    /* animation: scale 5s infinite; */
 }
 .text4 {
     width: 500px;
@@ -307,9 +328,9 @@ body {
     color: black;
     text-shadow: 0 0 3px green;
     font-family: 'Press Start 2P';
-    animation: scale 5s infinite;
+    /* animation: scale 5s infinite; */
 }
-@keyframes scale {
+/* @keyframes scale {
     0% {
         transform: scale(1);
     }
@@ -319,6 +340,12 @@ body {
     100% {
         transform: scale(1);
     }
+} */
+.paralax {
+    transition: 0.2s;
+}
+.paralaxTwo {
+    transition: 0.2s;
 }
 .footer {
 }

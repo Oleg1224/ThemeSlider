@@ -3,6 +3,8 @@ let slider = document.querySelector('.slider');
 let slide = document.querySelectorAll('.slide');
 let btn = document.querySelectorAll('.btn');
 let checkIndex = 0;
+let left = document.querySelector('.left');
+let rigth = document.querySelector('.right');
 function colorsChange (all) {
     document.body.style.backgroundColor = colors[all]
 }
@@ -30,13 +32,11 @@ for(let i = 0; i<btn.length; i++) {
         toSlide(i)
     })
 }
-let headMenu = document.querySelector('.header__menu');
-let menu = document.querySelector('.menu')
-headMenu.addEventListener('click', function() {
-    if(menu.className === 'menu') {
-        menu.classList.add('new')
-    }
-    else {
-        menu.classList.remove('new')
-    }
+left.addEventListener('click', function() {
+    prevSlide(checkIndex)
+    replit(checkIndex)
+})
+rigth.addEventListener('click', function() {
+    nextSlide(checkIndex)
+    replit(checkIndex)
 })
