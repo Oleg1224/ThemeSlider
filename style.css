@@ -74,9 +74,16 @@ body {
     width: 40px;
     cursor: pointer;
     position: relative;
+    padding: 15px;
+    /* border-radius: 50%; */
+    transition: 1s;
+    border: 1px solid #000;
 }
-.header__menu:hover {
+/* .header__menu:hover {
     transform: scale(1.2);
+} */
+.header__menu.rotate {
+    transform: rotate(360deg);
 }
 .menu {
     display: flex;
@@ -192,6 +199,7 @@ body {
     justify-content: space-around;
     position: relative;
     /* border: 1px solid #000; */
+    transition: all 0.5s ease;
 }
 .block {
     position: absolute;
@@ -349,3 +357,30 @@ body {
 }
 .footer {
 }
+/* Стилі для великих екранів (дисплей максимум 1199рх) */
+@media (max-width: 1199px) {
+    .main {
+        padding: 0 20px;
+    }
+    .img1 {
+        /* width: 600px; */
+        width: 70%;
+    }
+    .img2 {
+        width: 350px;
+    }
+    .text1 {
+        width: 450px;
+        font-size: 18px;
+    }
+}
+
+/* Стилі для середніх екранів (дисплей максимум 991рх) */
+    @media (max-width: 991px) {
+    }
+
+/* Стилі для малих екранів (дисплей максимум 767рх) */
+    @media (max-width: 767px) { ... }
+
+/* Стилі для дуже малих екранів (дисплей максимум 575рх) */
+    @media (max-width: 575px) { ... }
