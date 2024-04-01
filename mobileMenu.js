@@ -23,3 +23,7 @@ headMenu.addEventListener('click', function() {
         menu.style.borderRadius = '0%'; // Делаем круглый див прямоугольным
     }, 10); */
 })
+let menuImg1 = document.querySelector('.menu__block1-img1');
+let menuImg2 = document.querySelector('.menu__block1-img2');
+let menuImg3 = document.querySelector('.menu__block1-img3');
+let menuImg4 = document.querySelector('.menu__block1-img4');
