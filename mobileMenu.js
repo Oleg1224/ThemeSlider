@@ -27,3 +27,7 @@ let menuImg1 = document.querySelector('.menu__block1-img1');
 let menuImg2 = document.querySelector('.menu__block1-img2');
 let menuImg3 = document.querySelector('.menu__block1-img3');
 let menuImg4 = document.querySelector('.menu__block1-img4');
+let menu1 = document.querySelector('.menu1');
+let menu2 = document.querySelector('.menu2');
+let menu3 = document.querySelector('.menu3');
+let menu4 = document.querySelector('.menu4');
