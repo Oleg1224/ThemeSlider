@@ -300,21 +300,30 @@ body {
 .slide__body {
     max-width: 1200px;
     margin: 0 auto;
-    height: 80%;
+    height: 50%;
+    border: 1px solid #000;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     position: relative;
     /* border: 1px solid #000; */
+    /* top: 50px; */
+    margin-top: 180px;
     transition: all 0.5s ease;
 }
 .block {
+    /* position: absolute; */
     position: absolute;
+    max-width: 800px;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    right: 80px;
-    top: 350px;
+    border: 1px solid #000;
+    /* top: 100px; */
+    right: 0;
+    bottom: 100px;
+    /* right: 80px; */
+    /* top: 350px; */
 }
 .block2 {
     position: absolute;
@@ -341,10 +350,14 @@ body {
     top: 350px;
 }
 .img1 {
-    width:800px;
+    max-width: 800px;
     position: absolute;
     left: -100px;
-    top: 50px;
+    bottom: 0;
+    /* position: relative; */
+    /* bottom: 0; */
+    /* left: -100px; */
+    /* top: 50px; */
     /* animation: scale 5s infinite; */
 }
 .img2 {
@@ -465,29 +478,3 @@ body {
 .footer {
 }
 /* Стилі для великих екранів (дисплей максимум 1199рх) */
-@media (max-width: 1199px) {
-    .main {
-        padding: 0 20px;
-    }
-    .img1 {
-        /* width: 600px; */
-        width: 70%;
-    }
-    .img2 {
-        width: 350px;
-    }
-    .text1 {
-        width: 450px;
-        font-size: 18px;
-    }
-}
-
-/* Стилі для середніх екранів (дисплей максимум 991рх) */
-    @media (max-width: 991px) {
-    }
-
-/* Стилі для малих екранів (дисплей максимум 767рх) */
-    @media (max-width: 767px) { ... }
-
-/* Стилі для дуже малих екранів (дисплей максимум 575рх) */
-    @media (max-width: 575px) { ... }
