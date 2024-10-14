@@ -347,7 +347,7 @@ body {
     flex-direction: column-reverse;
     align-items: center;
     right: 80px;
-    top: 350px;
+    top: 280px;
 }
 .img1 {
     max-width: 800px;
@@ -393,14 +393,14 @@ body {
     /* animation: scale 5s infinite; */
 }
 .img7 {
-    width: 380px;
+    max-width: 380px;
     position: absolute;
     left: 150px;
-    top: 80px;
+    top: 0px;
     /* animation: scale 5s infinite; */
 }
 .img8 {
-    width: 500px;
+    max-width: 500px;
     position: absolute;
     right: 0px;
     top: -250px;
@@ -518,6 +518,23 @@ body {
     .img6, .text3 {
         max-width: 350px;
     }
+    .img7 {
+        max-width: 300px;
+        left: 150px;
+        /* border: 1px solid #ffffff; */
+    }
+    .img8 {
+        max-width: 350px;
+        /* border: 1px solid #ffffff; */
+    }
+    .text4 {
+        max-width: 350px;
+        top: -120px;
+    }
+    .block4 {
+        top: 200px;
+        right: 150px;
+    }
     html {
         overflow: hidden;
     }
@@ -584,6 +601,18 @@ body {
     }
     .img6 {
         right: -10px;
+    }
+    .img7 {
+        max-width: 300px;
+        top: -200px;
+        left: -150px;
+    }
+    .block4 {
+        top: 300px;
+        right: -250px;
+    }
+    .text4 {
+        max-width: 500px;
     }
 }
 
