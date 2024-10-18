@@ -252,6 +252,7 @@ body {
     /* padding: 200px 15px; */
     display: flex;
     transition: 1s;
+    overflow: hidden;
 }
 .slide {
     width: 100%;
